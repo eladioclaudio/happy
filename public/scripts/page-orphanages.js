@@ -9,7 +9,7 @@ const icon = L.icon({
     iconUrl: "../images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68],
-    popupAnchor: [170, 2];
+    popupAnchor: [170, 2]
 })
 
 // create popup overlay
