@@ -33,6 +33,8 @@ aside footer p {
 #mapid {
     width: 100%;
     height: 100%;
+    opacity: 0;
+    animation-delay: 200ms;
 }
 
 /* button */
