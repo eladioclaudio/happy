@@ -27,10 +27,12 @@ aside p {
 }
 
 aside footer p {
-  margin: 0.8rem;
+  margin: 0.8rem 0;
 }
 
 #mapid {
+    width: 100%;
+    height: 100%;
 }
 
 /* button */
@@ -50,6 +52,8 @@ a.create-orphanage {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 200ms;
 }
 
 
