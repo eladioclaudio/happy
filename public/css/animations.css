@@ -29,5 +29,5 @@
 
 .animate-right {
   animation-name: right;
-  animation-duration: 1s;
+  animation-duration: 300ms;
 }
