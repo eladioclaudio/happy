@@ -23,5 +23,5 @@ const popup = L.popup({
 
 // create and add mark
 L.marker([-8.8178385, 13.2295304]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .bindPopup('Ingombota, Luanda.<br> Angola.')
     .openPopup();
