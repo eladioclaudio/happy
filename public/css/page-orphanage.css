@@ -26,6 +26,36 @@ aside.sidebar footer button {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: background-color 0.2s
+}
+
+aside.sidebar footer button:hover {
+    background: #17D6EB;
+}
+
+/* details */
+
+.orphanage-details {
+    width: 70rem;
+    margin: 6.4rem  auto;
+    background: white;
+    border: 1px solid #D3E2E5;
+
+    border-radius: 2rem;
+}
+
+.orphanage-details > img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 16px 40px 0;
 }
 
 .width-sidebar {
