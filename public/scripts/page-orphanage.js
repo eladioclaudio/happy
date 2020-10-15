@@ -25,4 +25,10 @@ const icon = L.icon({
 
 // create and add mark
 L.marker([-8.8354864, 13.2283384], { icon })
-    .addTo(map)
+.addTo(map)
+
+/* image gallery */
+
+function selectImage(event) {
+    console.log('Cliquei no botao')
+}
