@@ -194,4 +194,23 @@ aside.sidebar footer button:hover {
     border: 0;
 
     cursor: pointer;
+
+    background: #3CDC8C;
+
+    border-radius: 2rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color .2s;
+}
+
+.primary-button:hover {
+    background: #36CF82;
+}
+
+.primary-button img {
+    margin-right: 1.6rem;
 }
