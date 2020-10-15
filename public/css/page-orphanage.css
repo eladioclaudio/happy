@@ -15,7 +15,15 @@ aside.sidebar {
     align-items: center;
 }
 
+aside.sidebar footer button {
+    width: 48px;
+    height: 48px;
+    background: #12AFCB;
+    border-radius: 1.6rem;
+    cursor: pointer;
+}
+
 .width-sidebar {
-    padding-left: 96px;
-    
+    padding-left: 110px;
+
 }
