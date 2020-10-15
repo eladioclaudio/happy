@@ -38,6 +38,10 @@ aside.sidebar footer button:hover {
   background: #17d6eb;
 }
 
+main {
+    flex: 1;
+}
+
 /* details */
 
 .orphanage-details {
