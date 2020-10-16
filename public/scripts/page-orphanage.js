@@ -32,7 +32,20 @@ L.marker([-8.8354864, 13.2283384], { icon })
 function selectImage(event) {
     const button = event.currentTarget;
     
+    // removendo todas as classes ative
     const buttons = document.querySelectorAll('.images button');
     console.log(buttons);
 
+    buttons.forEach((button) => {
+        button.classList.remove('active')
+    });
+
+    // selecionar imagem clicada.
+    const image = button.children[0];
+    const imageContainer = document.querySelector(".orphanage-details > img");
+    // atualizar o container de imagem.
+
+    imageContainer.src = image.src; 
+    // adicionar a classe .active para este botao
+    button.classList.add('active'); 
 }
