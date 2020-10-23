@@ -75,6 +75,8 @@ fieldset + fieldset {
   line-height: 2.8rem;
 }
 
+.input-block.images
+
 .input-block.images button {
   border: 2px dashed #96d2f0;
   width: 100%;
@@ -86,3 +88,5 @@ fieldset + fieldset {
 
   cursor: pointer;
 }
+
+
