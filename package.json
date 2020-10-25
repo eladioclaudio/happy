@@ -1,0 +1,23 @@
+{
+  "name": "happy",
+  "version": "1.0.0",
+  "description": "Projecto desenvolvido para as crianças em orfanatos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tchiinhemba/Haapy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tchiinhemba/Haapy/issues"
+  },
+  "homepage": "https://github.com/tchiinhemba/Haapy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
