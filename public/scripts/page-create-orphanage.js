@@ -17,9 +17,59 @@ map.on('click', (event) => {
     const lat = event.latlng.lat;
     const lng = event.latlng.lng;
 
+    document.querySelector('[name=lat]').value = lat;
+    document.querySelector('[name=lng').value = lng;
+
     // remove icon
     marker && map.removeLayer(marker);
 
     // ad icon layer
     marker = L.marker([lat, lng], { icon }).addTo(map);
 })
+
+
+// push photos on the orphanage
+
+function addPhotoField() {
+    //pegar container de fotos #images
+    const container = document.querySelector('#images')
+
+    //pegar o contaner para duplicar .new-upload
+    const fieldsContainer = document.querySelectorAll('.new-upload');
+    //realizar o clone, da ultima imagem adicionada
+    const newFieldContainer = fieldsContainer[fieldsContainer.length -1].cloneNode(true);
+
+    // verificar se o campo esta vazio, se sim, nao adicionar ao container de images
+
+    const input = newFieldContainer.children[0]
+
+    if (input.value == "") {
+        return
+    }
+
+    // Limpar o campo antes de adicionar ao container de imagens
+
+    newFieldContainer.children[0].value = ""
+
+    //adicionar o clone ao container de #images
+    container.appendChild(newFieldContainer);
+
+}
+
+
+function deleteField(event) {
+    const span = event.currentTarget;
+
+    const fieldsContainer = document.querySelectorAll('.new-upload');
+
+    console.log(fieldsContainer.length);
+
+    if (fieldsContainer.length < 2){
+        // limpar valor do campo
+        span.parentNode.children[0].value = "";
+        return 
+    }
+
+    span.parentNode.remove();
+
+}
