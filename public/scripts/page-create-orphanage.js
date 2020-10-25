@@ -73,3 +73,11 @@ function deleteField(event) {
     span.parentNode.remove();
 
 }
+
+
+// select yes our no
+
+function toggleSelect() {
+    console.log('cheguei aqui');
+}
+
