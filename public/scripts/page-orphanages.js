@@ -21,9 +21,17 @@ function addMarker({id, name, lat, lng}) {
     minWidth: 240,
     minHeight: 240,
   }).setContent(
-    `UNICEF Angola <a href="orphanage?id=1" class="choose-orphanage"> <img src="/images/arrow-white.svg"></a>`
+    `${name} <a href="orphanage?id=${id}"> <img src="/images/arrow-white.svg"></a>`
   );
 
   // create and add mark
-  L.marker([-8.8354864, 13.2283384], { icon }).addTo(map).bindPopup(popup);
+  L
+  .marker([lat, lng], { icon })
+  .addTo(map)
+  .bindPopup(popup)
+
+
 }
+
+
+const orphanagesSpan = document.querySelectorAll('')
