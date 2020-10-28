@@ -12,8 +12,7 @@ const icon = L.icon({
   popupAnchor: [170, 2],
 });
 
-function addMarker({id, name, lat, lng}) {
-
+function addMarker({ id, name, lat, lng }) {
   // create popup overlay
   const popup = L.popup({
     closeButton: false,
@@ -25,13 +24,18 @@ function addMarker({id, name, lat, lng}) {
   );
 
   // create and add mark
-  L
-  .marker([lat, lng], { icon })
-  .addTo(map)
-  .bindPopup(popup)
-
-
+  L.marker([lat, lng], { icon }).addTo(map).bindPopup(popup);
 }
 
+const orphanagesSpan = document.querySelectorAll(".orphanages span");
 
-const orphanagesSpan = document.querySelectorAll('')
+orphanagesSpan.forEach((span) => {
+  const orphanage = {
+    id: span.dataset.id,
+    name: span.dataset.name,
+    lat: span.dataset.lat,
+    lng: span.dataset.lng,
+  };
+
+  addMarker(orphanage);
+});
