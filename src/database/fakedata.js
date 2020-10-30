@@ -3,7 +3,7 @@ module.exports = [
     {
         id: 1,
         lat: "-8.8178385",
-        lng: 13.2295304,
+        lng: "13.2295304",
         name: "UNICEF Luanda",
         description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.",
         images: [
