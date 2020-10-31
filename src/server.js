@@ -7,8 +7,12 @@ const pages = require('./pages.js');
 // iniciando express
 const server = express();
 
-// utilizando arquivos estaticos
 server
+
+// utilizar body do req
+.use(express.urlencoded({ extended: true }))
+
+// utilizando arquivos estaticos
   .use(express.static('public'))
 
   // configurar a template engine

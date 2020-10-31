@@ -91,7 +91,7 @@ function toggleSelect(event) {
 
     // verificar se sim ou nao
 
-    input.value = button.dataset.value;
-    
+    input.value = button.dataset.value;    
 }
 
+function 
