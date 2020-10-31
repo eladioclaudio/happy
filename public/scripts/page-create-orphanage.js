@@ -94,4 +94,11 @@ function toggleSelect(event) {
     input.value = button.dataset.value;    
 }
 
-function 
+function validate(event) {
+    const needsLatAndLng = true;
+
+    if(needsLatAndLng) {
+        event.preventDefault();
+        alert('selecione um ponto no Mapa')
+    }
+}

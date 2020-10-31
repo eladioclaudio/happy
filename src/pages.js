@@ -42,7 +42,7 @@ module.exports = {
       return res.render('create-orphanage') 
     },
 
-    saveOrphanage(req, res) {
+    async saveOrphanage(req, res) {
       const fileds = req.body;
 
       // validar se todos os campos estao preenchidos
@@ -50,5 +50,16 @@ module.exports = {
       if(Object.values(fields).includes('')) {
         return res.send('Todos os campos devem ser preenchidos!')
       }
+
+      // slavar um orphanato
+      const db = await Database;
+      await saveOrphanage(db, {
+        lat: fields.lat,
+        lng: fields.lng,
+        name: fields.name,
+        about: fields.about,
+        whasapp: fields.whatsapp,
+        
+      })      
     }
 }
