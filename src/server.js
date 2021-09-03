@@ -29,4 +29,4 @@ server
 
 
 // ligar o servidor
-server.listen(6500);
+server.listen(5500);
