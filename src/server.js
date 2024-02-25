@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
+const PORT = 3000;
 
 
 // iniciando express
@@ -29,4 +30,4 @@ server
 
 
 // ligar o servidor
-server.listen(5500);
+server.listen(PORT, () => console.log(`Server is Running ate: http://localhost:${PORT}`));
