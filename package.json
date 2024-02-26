@@ -4,7 +4,7 @@
   "description": "Projecto desenvolvido para as crianças em orfanatos.",
   "main": "index.js",
   "scripts": {
-    "start": "ls -a && node ./src/index.js"
+    "start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
     "hbs": "^4.1.1",
     "nodemon": "^2.0.6",
     "sqlite-async": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=v16.20.2 <18.19.1"
   }
 }
